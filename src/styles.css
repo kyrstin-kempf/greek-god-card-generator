@@ -1,0 +1,61 @@
+body {
+  margin: 0px;
+  text-align: center;
+  color: #0d5c63;
+  font-size: 18px;
+}
+
+.homepage {
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+
+.formpage {
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+
+.nav-menu {
+  width: 100%;
+  background-color: #EBF5EE;
+  overflow: auto;
+}
+
+.nav-menu a {
+  display: inline-block;
+  padding: 8px;
+  margin: 15px 30px 15px 30px;
+  color: #0d5c63;
+  text-decoration: none;
+  font-size: 20px;
+  width: 130px;
+  text-align: center;
+}
+
+.nav-menu a:hover {
+  color: #0d5c63;
+}
+
+/* .nav-menu a.active {
+  border: 2px solid #0d5c63;
+  color: #0d5c63;
+  background-color: white;
+} */
+
+.card {
+  display: inline-block;
+  width: 250px;
+  height: 300px;
+  background-color: #EBF5EE;
+  margin: 10px;
+}
+
+.card-body {
+  /* background-color: white; */
+  margin: 10px;
+  padding: 10px;
+}
+
+.card-image {
+  height: 250px;
+}

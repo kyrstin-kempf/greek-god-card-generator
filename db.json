@@ -1,0 +1,68 @@
+{
+  "gods": [
+    {
+      "id": 1,
+      "name": "Aphrodite",
+      "romanname": "Venus",
+      "power": "Love, beauty, procreation",
+      "symbol": "Eros (winged godling), conch-shell",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/NAMA_Aphrodite_Syracuse.jpg/440px-NAMA_Aphrodite_Syracuse.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Apollo",
+      "romanname": "Apollo",
+      "power": "Music, prophecy, healing, archery",
+      "symbol": "Lyre, bow",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Apollo_of_the_Belvedere.jpg/704px-Apollo_of_the_Belvedere.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Ares",
+      "romanname": "Mars",
+      "power": "War, courage, battlelust",
+      "symbol": "Helm",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Ares_Ludovisi_Altemps_Inv8602_n2.jpg/440px-Ares_Ludovisi_Altemps_Inv8602_n2.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Artemis",
+      "romanname": "Diana",
+      "power": "Hunting, wild animals, children",
+      "symbol": "Bow and arrows",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Diana_of_Versailles.jpg/440px-Diana_of_Versailles.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Athena",
+      "romanname": "Minerva",
+      "power": "Wisdom, war, weaving, crafts",
+      "symbol": "Aegis, gorgoneion",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Mattei_Athena_Louvre_Ma530_n2.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Hermes",
+      "romanname": "Mercurius, Mercury",
+      "power": "Herds, trade, thievery, athletics, messengers",
+      "symbol": "Caduceus (herald's wand)",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Hermes_Ingenui_Pio-Clementino_Inv544.jpg/440px-Hermes_Ingenui_Pio-Clementino_Inv544.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Poseidon",
+      "romanname": "Neptune",
+      "power": "King of the Sea, earthquakes, floods, horses",
+      "symbol": " Trident, Bull, horse, dolphin",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/0036MAN_Poseidon.jpg/440px-0036MAN_Poseidon.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Zeus",
+      "romanname": "Jupiter",
+      "power": "Sky, weather, kings, fate",
+      "symbol": "Lightning bolt, eagle, bull",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Jupiter_Smyrna_Louvre_Ma13.jpg/440px-Jupiter_Smyrna_Louvre_Ma13.jpg"
+    }
+  ]
+}
