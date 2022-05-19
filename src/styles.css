@@ -42,12 +42,12 @@ h1 {
 
 .card {
   display: inline-block;
-  width: 250px;
+  width: 260px;
   height: 340px;
   background-color: #EBF5EE;
   margin: 10px;
-  perspective: 1000px;
   border: 1px solid #f1f1f1;
+  /* border: 1px solid red; */
 }
 
 .card h2 {
@@ -55,22 +55,23 @@ h1 {
 }
 
 .card-body {
-  position: relative;
-  margin: 10px;
-  padding: 10px;
   text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
 }
 
 .card-image {
   max-height: 250px;
+  padding-top: 20px;
 }
 
 .card-info {
-  text-align: left;
+  height: 250px;
   font-size: 14px;
-  line-height: 1;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  line-height: normal;
+  padding: 10px 20px;
+}
+
+.card-info h2 {
+  font-size: 14px;
+  padding-top: 10px;
+  margin-bottom: -8px;
 }
