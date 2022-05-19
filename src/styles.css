@@ -19,6 +19,11 @@ h1 {
   margin-bottom: 20px;
 }
 
+.favspage {
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+
 .nav-menu {
   width: 100%;
   background-color: #EBF5EE;
@@ -43,7 +48,7 @@ h1 {
 .card {
   display: inline-block;
   width: 260px;
-  height: 340px;
+  height: 335px;
   background-color: #EBF5EE;
   margin: 10px;
   border: 1px solid #f1f1f1;

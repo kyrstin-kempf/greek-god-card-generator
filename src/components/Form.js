@@ -8,7 +8,9 @@ function Form() {
   console.log(match);
 
   return (
-    <div className="formpage"> So You Want To Add A God?
+    <div className="formpage"> 
+    <h1>So You Want To Add A God?</h1>
+    <p>Fill out the form to create a god card</p>
       {/* <MoviesList movies={movies} />
       <Route exact path={match.url}>
         <h3>Choose a movie from the list above</h3>

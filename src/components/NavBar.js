@@ -21,6 +21,14 @@ function NavBar() {
         }}>
         Form
       </NavLink>
+      <NavLink to="/favorites"
+     exact activeStyle={{
+        border: "2px solid #0d5c63",
+        color: "#0d5c63",
+        backgroundColor: "white",
+        }}>
+        Favorites
+      </NavLink>
     </div>
   );
 }

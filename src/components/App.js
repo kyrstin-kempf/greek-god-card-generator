@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import NavBar from "./NavBar";
 import Form from "./Form";
 import Home from "./Home";
+import FavsPage from "./FavsPage";
 
 function App() {
 
@@ -10,6 +11,9 @@ function App() {
     <div>
       <NavBar />
       <Switch>
+        <Route path="/favorites">
+          <FavsPage />
+        </Route>
         <Route path="/form">
           <Form />
         </Route>
