@@ -12,8 +12,9 @@ function Home() {
     }, []);
 
   return (
-    <div className="homepage"> Guess Which God I Am
-    <br/>
+    <div className="homepage"> 
+    <h1>Guess My Power</h1>
+    <p>Click on a god to reveal more details</p>
     <br/>
     {gods.map((god) => (
         <GodTile

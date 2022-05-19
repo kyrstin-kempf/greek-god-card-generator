@@ -5,6 +5,10 @@ body {
   font-size: 18px;
 }
 
+h1 {
+  font-size: 28px;
+}
+
 .homepage {
   margin-top: 35px;
   margin-bottom: 20px;
@@ -36,26 +40,37 @@ body {
   color: #0d5c63;
 }
 
-/* .nav-menu a.active {
-  border: 2px solid #0d5c63;
-  color: #0d5c63;
-  background-color: white;
-} */
-
 .card {
   display: inline-block;
   width: 250px;
-  height: 300px;
+  height: 340px;
   background-color: #EBF5EE;
   margin: 10px;
+  perspective: 1000px;
+  border: 1px solid #f1f1f1;
+}
+
+.card h2 {
+  font-size: 22px;
 }
 
 .card-body {
-  /* background-color: white; */
+  position: relative;
   margin: 10px;
   padding: 10px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
 .card-image {
-  height: 250px;
+  max-height: 250px;
+}
+
+.card-info {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
