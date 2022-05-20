@@ -1,26 +1,13 @@
-import '../styles.css';
-import { Route, Switch } from "react-router-dom";
+import React from 'react';
 import NavBar from "./NavBar";
-import Form from "./Form";
-import Home from "./Home";
-import FavsPage from "./FavsPage";
+import MainContainer from "./MainContainer";
+import '../styles.css';
 
 function App() {
-
   return (
     <div>
       <NavBar />
-      <Switch>
-        <Route path="/favorites">
-          <FavsPage />
-        </Route>
-        <Route path="/form">
-          <Form />
-        </Route>
-        <Route exact path="/">
-          <Home />
-        </Route>
-      </Switch>
+      <MainContainer />
     </div>
   );
 }

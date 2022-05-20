@@ -1,32 +1,17 @@
 import React from "react";
-import '../styles.css';
 import { NavLink } from "react-router-dom";
+import '../styles.css';
 
 function NavBar() {
   return (
     <div className="nav-menu">
-      <NavLink to="/" 
-      exact activeStyle={{
-        border: "2px solid #0d5c63",
-        color: "#0d5c63",
-        backgroundColor: "white",
-        }}>
+      <NavLink exact activeClassName="active" to="/" >
         Home
       </NavLink>
-      <NavLink to="/form"
-     exact activeStyle={{
-        border: "2px solid #0d5c63",
-        color: "#0d5c63",
-        backgroundColor: "white",
-        }}>
+      <NavLink activeClassName="active" to="/form">
         Form
       </NavLink>
-      <NavLink to="/favorites"
-     exact activeStyle={{
-        border: "2px solid #0d5c63",
-        color: "#0d5c63",
-        backgroundColor: "white",
-        }}>
+      <NavLink activeClassName="active" to="/favorites">
         Favorites
       </NavLink>
     </div>

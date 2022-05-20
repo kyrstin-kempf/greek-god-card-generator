@@ -9,18 +9,3 @@ ReactDOM.render(
   </Router>,
   document.getElementById("root")
 );
-
-// function RenderApp() {
-//   useEffect(() => {
-//     console.log('rendered');
-//   });
-//   return (
-//     <Router>
-//      <App />
-//     </Router>,
-//   )
-// }
-
-// const container = document.getElementById("app");
-// const root = createRoot(container);
-// root.render(<RenderApp />);

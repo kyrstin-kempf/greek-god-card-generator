@@ -1,14 +1,20 @@
 import React, { useState } from "react";
 import '../styles.css';
+import FavStar from "./FavStar";
 
-function GodTile({ god }) {
+function Card({ god }) {
     const [hiddenInfo, setHiddenInfo] = useState(true)
 
+    const circle = '●'
+
+    const test = (e) => {
+        console.log(e.target.value)
+    }
+
     return (
-    <div className="card" 
-    onClick={() => setHiddenInfo(!hiddenInfo)}
-    >
-        {hiddenInfo ? <img className="card-image" src={god.url} alt={"Statue of " + god.name} /> :
+    <div className="card" value={god.name} onClick={() => test()}>
+        <div>
+        {hiddenInfo ? <img className="card-image" src={god.url} alt={"Statue of " + god.name} key={god.id}/> :
             <div className="card-info">
                 <h2>{"Power"}</h2>
                 <p>{god.power}</p>
@@ -19,10 +25,14 @@ function GodTile({ god }) {
             </div>
             }
         <div className="card-body">
+            <div className="circ">{circle}</div>
+            <FavStar god={god} key={god.id} />
+            <hr className="line"></hr>
             <h2>{god.name}</h2>
+        </div>
         </div>
     </div>
     )
 }
 
-export default GodTile;
+export default Card;
