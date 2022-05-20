@@ -2,7 +2,7 @@ import React from "react";
 import '../styles.css';
 import Card from "./Card";
 
-function HomePage({ gods }) {
+function HomePage({ gods, starred, handleClick }) {
   
   return (
     <div className="homepage"> 
@@ -10,11 +10,13 @@ function HomePage({ gods }) {
     <p>Click on a god to reveal more details</p>
     <br/>
     {gods.map((god) => (
-        <Card
-        key={god.id}
+        <Card 
+        key={god.id} 
         god={god}
-        />
-      ))}
+        starred={starred}
+        handleClick={handleClick} 
+       />
+    ))}
     </div>
   );
 }

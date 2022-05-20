@@ -160,7 +160,7 @@ form {
 .circ {
   font-size: 100px;
   position: absolute;
-  z-index: 2;
+  z-index: 9;
   left: -20px;
   top: -340px;
 }
@@ -169,7 +169,7 @@ form {
   font-size: 26px;
   font-weight: 100;
   position: absolute;
-  z-index: 2;
+  z-index: 9;
   left: -3px;
   top: -292px;
   color: white;
