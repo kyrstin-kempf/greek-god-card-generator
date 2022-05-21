@@ -1,14 +1,21 @@
 import React from 'react';
 import NavBar from "./NavBar";
-import MainContainer from "./MainContainer";
+import AllGods from "./AllGods";
+import NewGod from "./NewGod";
+import OneGod from './OneGod';
 import '../styles.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
-    <div>
+    <BrowserRouter>
       <NavBar />
-      <MainContainer />
-    </div>
+      <Routes>
+        <Route path="/" element={<AllGods />} />
+        <Route path="new" element={<NewGod />} />
+        <Route path=":id" element={<OneGod />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

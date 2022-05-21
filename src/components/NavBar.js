@@ -1,39 +1,15 @@
 import React from "react";
-import {Routes, Route, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import '../styles.css';
-import OneGod from "./OneGod";
-import NewGod from "./NewGod";
 
 function NavBar() {
   return (
-    <div className="nav-menu">
       <nav>
-        <Link exact activeclassname="active" to="/gods" >Gods</Link>
-        <Link activeclassname="active" to="/gods/new">New God</Link>
-        <Link activeclassname="active" to="/gods/:id">One God</Link>
+        <NavLink to="/">All Gods</NavLink>
+        <NavLink to=":id">One God</NavLink>
+        <NavLink to="new">New God</NavLink>
       </nav>
-
-      <Routes>
-        <Route path=":id" element={<OneGod />} />
-        <Route path="new" element={<NewGod />} />
-      </Routes>
-
-    </div>
   );
 }
 
 export default NavBar;
-
-// return (
-//   <div>
-//     <nav>
-//       <Link to="me">My Profile</Link>
-//     </nav>
-
-//     <Routes>
-//       <Route path=":id" element={<UserProfile />} />
-//       <Route path="me" element={<OwnUserProfile />} />
-//     </Routes>
-//   </div>
-// );
-// }
