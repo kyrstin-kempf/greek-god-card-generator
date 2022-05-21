@@ -6,7 +6,8 @@
       "romanname": "Venus",
       "power": "Love, beauty, procreation",
       "symbol": "Eros (winged godling), conch-shell",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/NAMA_Aphrodite_Syracuse.jpg/440px-NAMA_Aphrodite_Syracuse.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/NAMA_Aphrodite_Syracuse.jpg/440px-NAMA_Aphrodite_Syracuse.jpg",
+      "liked": false
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "romanname": "Apollo",
       "power": "Music, prophecy, healing, archery",
       "symbol": "Lyre, bow, making up for more lines",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Apollo_of_the_Belvedere.jpg/704px-Apollo_of_the_Belvedere.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Apollo_of_the_Belvedere.jpg/704px-Apollo_of_the_Belvedere.jpg",
+      "liked": false
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "romanname": "Mars",
       "power": "War, courage, battlelust",
       "symbol": "Helm",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Ares_Ludovisi_Altemps_Inv8602_n2.jpg/440px-Ares_Ludovisi_Altemps_Inv8602_n2.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Ares_Ludovisi_Altemps_Inv8602_n2.jpg/440px-Ares_Ludovisi_Altemps_Inv8602_n2.jpg",
+      "liked": false
     },
     {
       "id": 4,
@@ -30,7 +33,8 @@
       "romanname": "Diana",
       "power": "Hunting, wild animals, children",
       "symbol": "Bow and arrows",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Diana_of_Versailles.jpg/440px-Diana_of_Versailles.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Diana_of_Versailles.jpg/440px-Diana_of_Versailles.jpg",
+      "liked": false
     },
     {
       "id": 5,
@@ -38,7 +42,8 @@
       "romanname": "Minerva",
       "power": "Wisdom, war, weaving, crafts",
       "symbol": "Aegis, gorgoneion",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Mattei_Athena_Louvre_Ma530_n2.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Mattei_Athena_Louvre_Ma530_n2.jpg",
+      "liked": false
     },
     {
       "id": 6,
@@ -46,7 +51,8 @@
       "romanname": "Mercurius, Mercury",
       "power": "Herds, trade, thievery, athletics, messengers",
       "symbol": "Caduceus (herald's wand)",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Hermes_Ingenui_Pio-Clementino_Inv544.jpg/440px-Hermes_Ingenui_Pio-Clementino_Inv544.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Hermes_Ingenui_Pio-Clementino_Inv544.jpg/440px-Hermes_Ingenui_Pio-Clementino_Inv544.jpg",
+      "liked": false
     },
     {
       "id": 7,
@@ -54,7 +60,8 @@
       "romanname": "Neptune",
       "power": "King of the Sea, earthquakes, floods, horses",
       "symbol": " Trident, Bull, horse, dolphin",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/0036MAN_Poseidon.jpg/440px-0036MAN_Poseidon.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/0036MAN_Poseidon.jpg/440px-0036MAN_Poseidon.jpg",
+      "liked": false
     },
     {
       "id": 8,
@@ -62,7 +69,89 @@
       "romanname": "Jupiter",
       "power": "Sky, weather, kings, fate",
       "symbol": "Lightning bolt, eagle, bull",
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Jupiter_Smyrna_Louvre_Ma13.jpg/440px-Jupiter_Smyrna_Louvre_Ma13.jpg"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Jupiter_Smyrna_Louvre_Ma13.jpg/440px-Jupiter_Smyrna_Louvre_Ma13.jpg",
+      "liked": false
+    },
+    {
+      "name": "test",
+      "romanname": "test",
+      "power": "test",
+      "symbol": "test",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg",
+      "liked": false,
+      "id": 9
+    },
+    {
+      "name": "3",
+      "romanname": "3",
+      "power": "3",
+      "symbol": "3",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg",
+      "liked": false,
+      "id": 10
+    },
+    {
+      "name": "3",
+      "romanname": "3",
+      "power": "3",
+      "symbol": "3",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg",
+      "liked": false,
+      "id": 11
+    },
+    {
+      "name": "4444",
+      "romanname": "4",
+      "power": "4",
+      "symbol": "4",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg",
+      "liked": false,
+      "id": 12
+    },
+    {
+      "name": "5",
+      "romanname": "5",
+      "power": "5",
+      "symbol": "5",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg",
+      "liked": false,
+      "id": 13
+    },
+    {
+      "name": "7",
+      "romanname": "7",
+      "power": "7",
+      "symbol": "7",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg",
+      "liked": false,
+      "id": 14
+    },
+    {
+      "name": "88",
+      "romanname": "8",
+      "power": "8",
+      "symbol": "8",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg",
+      "liked": false,
+      "id": 15
+    },
+    {
+      "name": "88",
+      "romanname": "8",
+      "power": "8",
+      "symbol": "8",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg",
+      "liked": false,
+      "id": 16
+    },
+    {
+      "name": "8",
+      "romanname": "8",
+      "power": "8",
+      "symbol": "8",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg",
+      "liked": false,
+      "id": 17
     }
   ]
 }

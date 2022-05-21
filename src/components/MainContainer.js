@@ -1,49 +1,39 @@
 import React, { useEffect, useState } from 'react';
-import { Route, Switch } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import '../styles.css';
-import HomePage from "./HomePage";
-import FavPage from "./FavPage";
-import FormPage from "./FormPage"
+import AllGods from "./AllGods";
+import OneGod from "./OneGod";
+import NewGod from "./NewGod"
+import { BrowserRouter } from 'react-router-dom';
 
 function MainContainer() {
   const [gods, setGods] = useState([]);
   const [myFavorites, setMyFavorites] = useState(true)
-  const [liked, setLiked] = useState(true);
-
-  const fullStar = '★'
-  const emptyStar = '☆'
-
-  const starred = liked ? emptyStar : fullStar
   
-  const addGodToFavorites = (god) => {
-        setLiked((liked) => !liked);
-        console.log('add')
-        if(!myFavorites.includes(god)){
-        const updateFavs = [...myFavorites, god]
-        setMyFavorites(updateFavs)
-        }
-    }
+//   const addGodToFavorites = (god) => {
+//        const newGods = gods.map(g => g.id === god.id ? {...g, liked: !g.liked} : g)
+//         setGods(newGods)
+//     }
  
     
   useEffect(() => {
-    fetch("http://localhost:3001/gods")
+    fetch('http://localhost:3001/gods')
     .then((r) => r.json())
     .then((gods) => setGods(gods));
   }, []);
 
+  function handleAddGod(newGod) {
+    // console.log("In ShoppingList:", newItem);
+    setGods([...gods, newGod]);
+  }
+
   return (
     <div>
-      <Switch>
-        <Route path="/favorites">
-          <FavPage gods={myFavorites} />
-        </Route>
-        <Route path="/form">
-          <FormPage />
-        </Route>
-        <Route exact path="/">
-          <HomePage gods={gods} starred={starred} handleClick={addGodToFavorites} />
-        </Route>
-      </Switch>
+        <Routes>
+          <Route path="/gods/new" component={<NewGod />} />
+          <Route path="/gods/:id" component={<OneGod />} />
+          <Route path="/" component={<AllGods />} />
+        </Routes>
     </div>
   );
 }
