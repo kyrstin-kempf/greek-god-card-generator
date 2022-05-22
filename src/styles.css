@@ -14,11 +14,18 @@ h1 {
   margin-bottom: 20px;
 }
 
+h2 {
+  color: #0d5c63;
+}
+
 /* -------------------------------------------------------------------------- NAVIGATION */
 .nav-menu {
   background-color: #EBF5EE;
   margin-left: -32px;
   margin-right: -32px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: left;
 }
 
 .nav-menu a {
@@ -44,7 +51,11 @@ a[aria-current="page"] {
   border-radius: 2px;
 }
 
-.nav-menu a.add-god{
+.nav-menu a.add-god {
+  float: right;
+}
+
+/* .nav-menu a.add-god{
   background-color: #0d5c63;
   color: #EBF5EE;
   border: 1px solid #0d5c63;
@@ -53,10 +64,11 @@ a[aria-current="page"] {
   float: right;
   right: 30px;
   position: absolute;
-}
-.nav-menu a.add-god.add-god:hover {
+} */
+
+/* .nav-menu a.add-god.add-god:hover {
   background-color: #074046;
-}
+} */
 
 /* -------------------------------------------------------------------------- CARD */
 .card-container {
@@ -187,14 +199,31 @@ input[type=submit]:hover {
 
 /* -------------------------------------------------------------------------- LIKE FEATURES */
 .circ {
-  font-size: 60px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0d5c63;
+  padding: 3px 8px;
   position: absolute;
-  left: -19px;
-  top: -312px;
-  cursor: default;
+  left: -4px;
+  top: -285px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
 }
 
-.eStar {
+.expand {
+  font-size: 35px;
+  color: #0d5c63;
+  padding: 10px;
+  position: absolute;
+  right: -6px;
+  top: -298px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+/* .eStar {
   font-size: 28px;
   font-weight: 100;
   position: absolute;
@@ -203,4 +232,4 @@ input[type=submit]:hover {
   cursor: pointer;
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+} */
