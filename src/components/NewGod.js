@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import '../styles.css';
 import { useNavigate } from "react-router-dom"
 
-function NewGod({ handleAddGod }) {
+function NewGod({ addGod }) {
   const [name, setName] = useState('');
-  const [romanname, setRomanname] = useState('');
   const [power, setPower] = useState('');
   const [symbol, setSymbol] = useState('');
+  const [romanname, setRomanname] = useState('');
   const [image, setImage] = useState('');
 
   const navigate = useNavigate();
@@ -17,9 +17,9 @@ function NewGod({ handleAddGod }) {
     
     const godData = {
       name: name,
-      romanname: romanname,
       power: power,
       symbol: symbol,
+      romanname: romanname,
       url: image === '' ? 'https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg' : image,
       liked: false,
     }
@@ -33,6 +33,9 @@ function NewGod({ handleAddGod }) {
       body: JSON.stringify(godData)
     })
     .then(r => r.json())
+    .then(data => {
+      addGod(data);
+    })
     .then(newGod => navigate('/gods'))
 }
 
@@ -65,7 +68,7 @@ function NewGod({ handleAddGod }) {
             <label className="link-faq">If no image is available, leave blank</label>
           </li>
         </ul>
-        <input type="submit"/>
+        <input type="submit" value="Add God"/>
       </form>
     </div>
     </div>

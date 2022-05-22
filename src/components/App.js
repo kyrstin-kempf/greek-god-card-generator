@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import NavBar from "./NavBar";
-import Home from './Home';
 import AllGods from "./AllGods";
 import NewGod from "./NewGod";
+import Favorites from './Favorites';
 import '../styles.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
   const [gods, setGods] = useState([]);
+
+  const addGod = god => {
+    setGods([...gods, god])
+  }
 
   useEffect(() => {
     const fetchGods = async () => {
@@ -23,9 +27,9 @@ const App = () => {
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/gods" element={<AllGods gods={gods}/>} />
-        <Route path="/gods/new" element={<NewGod />} />
+        <Route path="/gods/new" element={<NewGod addGod={addGod} />} />
+        <Route path="/gods/favorites" element={<Favorites />} />
       </Routes>
     </BrowserRouter>
   );
