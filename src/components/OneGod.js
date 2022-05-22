@@ -5,7 +5,7 @@ import Card from "./Card";
 function OneGod({ gods }) {
 
   return (
-    <div className="favpage"> 
+    <div> 
     <h1>Details</h1>
       {/* <Card /> */}
       <div className="card">

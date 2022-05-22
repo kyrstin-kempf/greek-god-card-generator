@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import '../styles.css';
 
 function NewGod({ handleAddGod }) {
@@ -9,7 +9,7 @@ function NewGod({ handleAddGod }) {
   const [symbol, setSymbol] = useState('');
   const [image, setImage] = useState('');
 
-  let history = useNavigate();
+  // let history = useNavigate();
 
   function handleSubmit(e) {
     console.log('clicked')
@@ -24,9 +24,9 @@ function NewGod({ handleAddGod }) {
       liked: false,
     }
 
-    function test() {
-      return this.history.push('/gods')
-    }
+    // function test() {
+    //   return this.history.push('/gods')
+    // }
 
     fetch(`http://localhost:3001/gods`, {
       method: "POST",
@@ -37,14 +37,14 @@ function NewGod({ handleAddGod }) {
     })
     .then((r) => r.json())
     .then((newGod) => handleAddGod(newGod))
-    .then(response => {
-      let imageUrl = response.data.id +
-      history.push(imageUrl)
-     })
+    // .then(response => {
+    //   let imageUrl = response.data.id +
+    //   history.push(imageUrl)
+    //  })
 }
 
   return (
-    <div className="formpage"> 
+    <div> 
     <h1>So You Want To Add A God?</h1>
     <p>Fill out the form to create a god card</p>
     <div className="container">
