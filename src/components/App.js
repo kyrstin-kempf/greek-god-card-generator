@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import NavBar from "./NavBar";
 import AllGods from "./AllGods";
 import NewGod from "./NewGod";
-import Favorites from './Favorites';
+import OneGod from './OneGod';
 import '../styles.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -29,7 +29,7 @@ const App = () => {
       <Routes>
         <Route path="/gods" element={<AllGods gods={gods}/>} />
         <Route path="/gods/new" element={<NewGod addGod={addGod} />} />
-        <Route path="/gods/favorites" element={<Favorites />} />
+        <Route path="/gods/:id" element={<OneGod gods={gods} />} />
       </Routes>
     </BrowserRouter>
   );
