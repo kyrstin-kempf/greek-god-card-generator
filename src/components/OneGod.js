@@ -1,27 +1,51 @@
 import React from "react";
 import '../styles.css';
-import Card from "./Card";
 
-function OneGod({ gods }) {
+function OneGod({ god }) {
 
   const deleteCard = '×'
 
   return (
-    <div> 
-    <h1>Details</h1>
-      {/* <Card /> */}
-      <div className="card">
-        <div className="card-info">
-          <h2>{"Power"}</h2>
-          <p>{gods.power}</p>
-          <h2>{"Symbol"}</h2>
-          <p>{gods.symbol}</p>
-          <h2>{"Roman Name"}</h2>
-          <p>{gods.romanname}</p>
+    <div className="card-container">
+        <div className="card" key={god.id}> 
+            <img 
+            className="card-image" 
+            src={god.url} 
+            alt={"Statue of " + god.name}
+            />
+            <div className="card-body">
+                    <hr className="line"></hr>
+                    <h2>{god.name}</h2>
+            </div>
         </div>
-        <div className="deleteX">{deleteCard}</div>
-      </div>
     </div>
+    // <div> 
+    // <h1>Details</h1>
+    //   <div className="card-container">
+    //       <div className="card"> 
+    //           <img 
+    //           className="card-image" 
+    //           src={god.url} 
+    //           alt={"Statue of " + god.name}
+    //           />
+    //           <div className="card-body">
+    //                   <hr className="line"></hr>
+    //                   <h2>{god.name}</h2>
+    //           </div>
+    //       </div>
+    //     </div>
+    //   <div className="card">
+    //     <div className="card-info">
+    //       <h2>{"Power"}</h2>
+    //       <p>{god.power}</p>
+    //       <h2>{"Symbol"}</h2>
+    //       <p>{god.symbol}</p>
+    //       <h2>{"Roman Name"}</h2>
+    //       <p>{god.romanname}</p>
+    //     </div>
+    //     <button className="deleteX">{deleteCard}</button>
+    //   </div>
+    // </div>
   );
 }
 export default OneGod;

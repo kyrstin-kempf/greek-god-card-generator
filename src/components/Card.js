@@ -1,30 +1,21 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import '../styles.css';
+import { Link } from "react-router-dom"
 
 function Card({ god }) {
     const [liked, setLiked] = useState(true);
 
-    const circle = '●'
     const fullStar = '★'
     const emptyStar = '☆'
 
     const starred = liked ? emptyStar : fullStar
 
-    const navigate = useNavigate();
-
     function handleClick() {
         setLiked(!liked)
-    }   
-
-    function handleGod(e) {
-        console.log(e.target)
-        const thisGod = e.target.id
-        navigate(`/gods/${thisGod}`)
     }
 
     return (
-        <div className="card-container" onClick={handleGod}>
+        <div className="card-container">
             <div className="card" key={god.id}> 
                 <img 
                 className="card-image" 
@@ -34,8 +25,8 @@ function Card({ god }) {
                 <div className="card-body">
                         <hr className="line"></hr>
                         <h2>{god.name}</h2>
-                    <div className="circ">{circle}</div>
-                    <div className="eStar" onClick={handleClick}>{starred}</div>
+                    <button className="circ" onClick={handleClick}>{starred}</button>
+                    <Link to={`/gods/${god.id}`}><button className="expand">+</button></Link>
                 </div>
             </div>
         </div>
