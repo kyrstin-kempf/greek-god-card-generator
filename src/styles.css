@@ -16,7 +16,6 @@ h1 {
 
 /* -------------------------------------------------------------------------- NAVIGATION */
 .nav-menu {
-  /* width: auto; */
   background-color: #EBF5EE;
   margin-left: -32px;
   margin-right: -32px;
@@ -36,11 +35,27 @@ h1 {
 
 a[aria-current="page"] {
   border: 2px solid #0d5c63;
+  border-radius: 2px;
   background-color: white;
 }
 
 .nav-menu a:hover {
   border: 2px solid #0d5c63;
+  border-radius: 2px;
+}
+
+.nav-menu a.add-god{
+  background-color: #0d5c63;
+  color: #EBF5EE;
+  border: 1px solid #0d5c63;
+  padding: 9px;
+  border-radius: 2px;
+  float: right;
+  right: 30px;
+  position: absolute;
+}
+.nav-menu a.add-god.add-god:hover {
+  background-color: #074046;
 }
 
 /* -------------------------------------------------------------------------- CARD */
@@ -55,6 +70,7 @@ a[aria-current="page"] {
   background-color: #EBF5EE;
   margin: 10px;
   border: 1px solid #f1f1f1;
+  border-radius: 2px;
   z-index: -1;
 }
 
@@ -94,7 +110,10 @@ a[aria-current="page"] {
 /* -------------------------------------------------------------------------- FORM */
 /* -------------------- HTML & CSS formatting reference: https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form */
 form {
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 150px;
+  margin-left: auto;
+  margin-right: auto;
   width: 600px;
   padding: 30px 18px;
   border: 1px solid rgb(201, 199, 199);
@@ -121,19 +140,19 @@ label {
   font-size: 18px;
 }
 
-input, textarea {
+input {
   width: 60%;
   box-sizing: border-box;
   padding: 8px;
   margin: 10px;
   border: 1px solid rgb(201, 199, 199);
+  border-radius: 2px;
 }
 
 input[type=text]:focus {
   background-color: #EBF5EE;
   outline: none;
   border: 1px solid rgb(201, 199, 199);
-  border-radius: 1px;
 }
 
 input[type=submit] {
@@ -141,11 +160,12 @@ input[type=submit] {
   background-color: #0d5c63;
   color: #EBF5EE;
   border: 1px solid #0d5c63;
-  padding: 8px;
+  padding: 9px;
   margin-top: 38px;
   margin-bottom: 0px;
   border-radius: 2px;
   width: 160px;
+  font-size: 18px;
 }
 
 input[type=submit]:hover {
@@ -167,19 +187,19 @@ input[type=submit]:hover {
 
 /* -------------------------------------------------------------------------- LIKE FEATURES */
 .circ {
-  font-size: 100px;
+  font-size: 60px;
   position: absolute;
   left: -19px;
-  top: -338px;
+  top: -312px;
   cursor: default;
 }
 
 .eStar {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 100;
   position: absolute;
-  left: -2px;
-  top: -290px;
+  left: -5px;
+  top: -292px;
   cursor: pointer;
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import '../styles.css';
 
 function Card({ god }) {
@@ -10,12 +11,16 @@ function Card({ god }) {
 
     const starred = liked ? emptyStar : fullStar
 
+    const navigate = useNavigate();
+
     function handleClick() {
         setLiked(!liked)
     }   
 
     function handleGod(e) {
         console.log(e.target)
+        const thisGod = e.target.id
+        navigate(`/gods/${thisGod}`)
     }
 
     return (
