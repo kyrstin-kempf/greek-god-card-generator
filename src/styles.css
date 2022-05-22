@@ -7,19 +7,6 @@ body {
 
 h1 {
   font-size: 28px;
-}
-
-.homepage {
-  margin-top: 35px;
-  margin-bottom: 20px;
-}
-
-.formpage {
-  margin-top: 35px;
-  margin-bottom: 20px;
-}
-
-.favspage {
   margin-top: 35px;
   margin-bottom: 20px;
 }
@@ -30,35 +17,29 @@ h1 {
   overflow: auto;
 }
 
-.active {
-  border: 2px solid #0d5c63;
-  color: #0d5c63;
-  background-color: white;
-}
-
 .nav-menu a {
   display: inline-block;
   padding: 8px;
-  margin: 15px 30px 15px 30px;
+  margin: 15px 28px 15px 28px;
   color: #0d5c63;
+  border: 2px solid #EBF5EE;
   text-decoration: none;
   font-size: 20px;
   width: 130px;
   text-align: center;
 }
 
+a[aria-current="page"] {
+  border: 2px solid #0d5c63;
+  background-color: white;
+}
+
 .nav-menu a:hover {
-  color: #0d5c63;
+  border: 2px solid #0d5c63;
 }
 
 .card-container {
   display: inline-block;
-}
-
-.favs-toggle {
-  height: 50px;
-  border: 2px solid red;
-  display: relative;
 }
 
 .card {
