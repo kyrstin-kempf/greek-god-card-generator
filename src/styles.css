@@ -92,6 +92,7 @@ a[aria-current="page"] {
 }
 
 /* -------------------------------------------------------------------------- FORM */
+/* -------------------- HTML & CSS formatting reference: https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form */
 form {
   margin: 0 auto;
   width: 600px;
