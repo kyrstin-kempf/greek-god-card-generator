@@ -4,6 +4,8 @@ import Card from "./Card";
 
 function OneGod({ gods }) {
 
+  const deleteCard = '×'
+
   return (
     <div> 
     <h1>Details</h1>
@@ -17,6 +19,7 @@ function OneGod({ gods }) {
           <h2>{"Roman Name"}</h2>
           <p>{gods.romanname}</p>
         </div>
+        <div className="deleteX">{deleteCard}</div>
       </div>
     </div>
   );
