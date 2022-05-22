@@ -46,81 +46,37 @@ function NewGod({ handleAddGod }) {
   return (
     <div> 
     <h1>So You Want To Add A God?</h1>
-    <p>Fill out the form to create a god card</p>
-    <div className="container">
+    <p className="form-space">Fill out the form to create a god card</p>
+    <div>
       <form onSubmit={handleSubmit}>
-        <div className="row">
-          <div className="col-25">
-            <label>God/Goddess Name</label>
-          </div>
-          <div className="col-75">
-            <input 
-            type="text" 
-            name="name" 
-            value={name} 
-            onChange={(e) => setName(e.target.value)}
-            />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-25">
-            <label>Power</label>
-          </div>
-          <div className="col-75">
-            <input 
-            type="text" 
-            name="power" 
-            value={power}
-            onChange={(e) => setPower(e.target.value)}
-            />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-25">
-            <label>Symbol</label>
-          </div>
-          <div className="col-75">
-            <input 
-            type="text" 
-            name="symbol" 
-            value={symbol}
-            onChange={(e) => setSymbol(e.target.value)}
-            />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-25">
-            <label>Roman Name</label>
-          </div>
-          <div className="col-75">
-            <input 
-            type="text" 
-            name="romanname" 
-            value={romanname}
-            onChange={(e) => setRomanname(e.target.value)}
-            />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-25">
-            <label>Image Link</label>
-          </div>
-          <div className="col-75">
-            <input 
-            type="text" 
-            name="url" 
-            value={image}
-            onChange={(e) => setImage(e.target.value)}
-            />
-          <label className="link-faq">If no image is available, leave blank</label>
-          </div>
-        </div>
-        <div>
-          <input type="submit" value="Submit" onClick={handleAddGod}/>
-        </div>
+        <ul>
+          <li>
+            <label for="name">God/Goddess Name</label>
+            <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)}/>
+          </li>
+          <li>
+            <label for="power">Power</label>
+            <input type="text" id="power" value={power} onChange={(e) => setPower(e.target.value)}/>
+          </li>
+          <li>
+            <label for="symbol">Symbol</label>
+            <input type="text" id="symbol" value={symbol} onChange={(e) => setSymbol(e.target.value)}/>
+          </li>
+          <li>
+            <label for="romanname">Roman Name</label>
+            <input type="text" id="romanname" value={romanname} onChange={(e) => setRomanname(e.target.value)}/>
+          </li>
+          <li>
+            <label for="image">Image Link</label>
+            <input type="text" id="image" value={image} onChange={(e) => setImage(e.target.value)}/>
+            <label className="link-faq">If no image is available, leave blank</label>
+          </li>
+        </ul>
+        <input type="submit" onClick={handleAddGod}/>
       </form>
     </div>
     </div>
   );
 }
 export default NewGod;
+
