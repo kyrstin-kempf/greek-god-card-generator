@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-// import { useNavigate } from "react-router-dom";
 import '../styles.css';
+import { useNavigate } from "react-router-dom"
 
 function NewGod({ handleAddGod }) {
   const [name, setName] = useState('');
@@ -9,12 +9,12 @@ function NewGod({ handleAddGod }) {
   const [symbol, setSymbol] = useState('');
   const [image, setImage] = useState('');
 
-  // let history = useNavigate();
+  const navigate = useNavigate();
 
-  function handleSubmit(e) {
-    console.log('clicked')
+  const handleSubmit = e => {
     e.preventDefault();
-
+    console.log('clicked')
+    
     const godData = {
       name: name,
       romanname: romanname,
@@ -24,23 +24,16 @@ function NewGod({ handleAddGod }) {
       liked: false,
     }
 
-    // function test() {
-    //   return this.history.push('/gods')
-    // }
-
     fetch(`http://localhost:3001/gods`, {
       method: "POST",
       headers: {
+          "Accept": "application/json",
           "Content-Type": "application/json",
       },
       body: JSON.stringify(godData)
     })
-    .then((r) => r.json())
-    .then((newGod) => handleAddGod(newGod))
-    // .then(response => {
-    //   let imageUrl = response.data.id +
-    //   history.push(imageUrl)
-    //  })
+    .then(r => r.json())
+    .then(newGod => navigate('/gods'))
 }
 
   return (
@@ -48,31 +41,31 @@ function NewGod({ handleAddGod }) {
     <h1>So You Want To Add A God?</h1>
     <p className="form-space">Fill out the form to create a god card</p>
     <div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={ handleSubmit }>
         <ul>
           <li>
-            <label for="name">God/Goddess Name</label>
-            <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)}/>
+            <label htmlFor="name">God/Goddess Name</label>
+            <input type="text" id="name" value={ name } onChange={ (e) => setName(e.target.value) }/>
           </li>
           <li>
-            <label for="power">Power</label>
-            <input type="text" id="power" value={power} onChange={(e) => setPower(e.target.value)}/>
+            <label htmlFor="power">Power</label>
+            <input type="text" id="power" value={ power } onChange={ (e) => setPower(e.target.value) }/>
           </li>
           <li>
-            <label for="symbol">Symbol</label>
-            <input type="text" id="symbol" value={symbol} onChange={(e) => setSymbol(e.target.value)}/>
+            <label htmlFor="symbol">Symbol</label>
+            <input type="text" id="symbol" value={ symbol } onChange={ (e) => setSymbol(e.target.value) }/>
           </li>
           <li>
-            <label for="romanname">Roman Name</label>
-            <input type="text" id="romanname" value={romanname} onChange={(e) => setRomanname(e.target.value)}/>
+            <label htmlFor="romanname">Roman Name</label>
+            <input type="text" id="romanname" value={ romanname } onChange={ (e) => setRomanname(e.target.value) }/>
           </li>
           <li>
-            <label for="image">Image Link</label>
-            <input type="text" id="image" value={image} onChange={(e) => setImage(e.target.value)}/>
+            <label htmlFor="image">Image Link</label>
+            <input type="text" id="image" value={ image } onChange={ (e) => setImage(e.target.value) }/>
             <label className="link-faq">If no image is available, leave blank</label>
           </li>
         </ul>
-        <input type="submit" onClick={handleAddGod}/>
+        <input type="submit"/>
       </form>
     </div>
     </div>
