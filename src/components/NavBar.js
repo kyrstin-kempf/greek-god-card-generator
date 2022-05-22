@@ -4,10 +4,10 @@ import '../styles.css';
 
 function NavBar() {
   return (
-      <nav>
-        <NavLink to="/">All Gods</NavLink>
-        <NavLink to=":id">One God</NavLink>
-        <NavLink to="new">New God</NavLink>
+      <nav className="nav-menu">
+        <NavLink end to="/">Home</NavLink>
+        <NavLink end to="/gods">All Gods</NavLink>
+        <NavLink end to="/gods/new">New God</NavLink>
       </nav>
   );
 }
