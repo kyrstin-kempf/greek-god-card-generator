@@ -28,6 +28,12 @@ App()
 }
 ```
 
+### Stretch Goals
+* Favorite a god with a star
+* Click on god card to view details
+* Delete god card on detail page
+* Persist favorited gods
+
 ## How To Start
 1. `npm install`
 2. `npm run server` 
