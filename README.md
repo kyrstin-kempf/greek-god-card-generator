@@ -18,7 +18,7 @@ App()
 
 ```
 {
-    id": 1,
+    "id": 1,
     "name": "Aphrodite",
     "romanname": "Venus",
     "power": "Love, beauty, procreation",
