@@ -1,18 +1,43 @@
-A README is a text file that introduces and explains a project. It contains information that is commonly required to understand what the project is about.
+# Greek Gods Card Generator
+The Greek Gods Card Generator is a **single page app (SPA)** that allows a user to view cards of Greek gods, star favorite gods, and create new Greek Gods cards by filling out a form.
 
-It's an easy way to answer questions that your audience will likely have regarding how to install and use your project and also how to collaborate with you.
+## App Details
+* The Greek Gods Card Generator contains six components 
+```
+App()
+   NavBar()
+   AllGods()
+      Card()
+    OneGod()
+   NewGod()
+```
+* There are three client-side routes using React Router ('/', '/gods/new', 'gods/:id)
+* This app contains a GET request and a POST request
+    - GET fetches the data from db.json and POST adds data to to db.json
+* The information on each god includes the following:
 
-- 30+ commits
-- Single page application (SPA) using create-react-app
-- At least 5 components
-    - Nav bar or other navigation
-- At least 3 client-side routes using React Router
-- Use a json-server to create a RESTful API for your backend
-    - make a GET request to the json server
-    - make a POST request to the json server 
-        - Use a form to make your post request, specifically a controlled form/component
+```
+{
+    id": 1,
+    "name": "Aphrodite",
+    "romanname": "Venus",
+    "power": "Love, beauty, procreation",
+    "symbol": "Eros (winged godling), conch-shell",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/NAMA_Aphrodite_Syracuse.jpg/440px-NAMA_Aphrodite_Syracuse.jpg",
+    "liked": false
+}
+```
 
-You're encouraged to write your CSS from scratch, either by using styled components or writing CSS files and using id/className to style your elements
+## How To Start
+1. `npm install`
+2. `npm run server` 
+    - if rendered correctly, will be port 3001 
+    - http://localhost:3001/gods
+    - This will not work if json-server is not installed
+3. `npm start` 
+    - will open the React app in your browser
 
-## Sources
-Db.json data inspired and referenced largely from Dane Dawson's json-server-collection. https://github.com/Dane-Dawson/json-server-collection/tree/main/greek-mythology Data shortened and modified. Images from Wikipedia.
+### Sources
+* Db.json data inspired and referenced largely from Dane Dawson's json-server-collection. Data shortened and modified.
+    - https://github.com/Dane-Dawson/json-server-collection/tree/main/greek-mythology  
+* Images from Wikipedia
