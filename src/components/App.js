@@ -9,8 +9,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 const App = () => {
   const [gods, setGods] = useState([]);
 
-  const addGod = god => {
+  const addGod = (god) => {
     setGods([...gods, god])
+  }
+
+  const handleCardClick = (god) => {
+    console.log(god)
+    return (
+      <OneGod god={god} />
+    )
   }
 
   useEffect(() => {
@@ -27,9 +34,9 @@ const App = () => {
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path="/gods" element={<AllGods gods={gods}/>} />
+        <Route path="/" element={<AllGods gods={gods} handleCardClick={handleCardClick} />} />
         <Route path="/gods/new" element={<NewGod addGod={addGod} />} />
-        <Route path="/gods/:id" element={<OneGod gods={gods} />} />
+        <Route path="/gods/:id" element={<OneGod />} />
       </Routes>
     </BrowserRouter>
   );

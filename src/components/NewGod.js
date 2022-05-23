@@ -36,7 +36,7 @@ function NewGod({ addGod }) {
     .then(data => {
       addGod(data);
     })
-    .then(newGod => navigate('/gods'))
+    .then(newGod => navigate('/'))
 }
 
   return (
