@@ -33,9 +33,7 @@ function NewGod({ addGod }) {
       body: JSON.stringify(godData)
     })
     .then(r => r.json())
-    .then(data => {
-      addGod(data);
-    })
+    .then(data => addGod(data))
     .then(newGod => navigate('/'))
 }
 

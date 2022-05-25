@@ -2,9 +2,9 @@ import React from "react";
 import '../styles.css';
 import Card from "./Card";
 
-function AllGods({ gods, handleCardClick }) {
+function AllGods({ gods }) {
   
-  const godList = gods.map((god) => <Card key={ god.id } god={ god } handleCardClick={handleCardClick} />)
+  const godList = gods.map((god) => <Card key={ god.id } god={ god } />)
 
   return (
     <div> 

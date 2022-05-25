@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import '../styles.css';
 import { Link } from "react-router-dom"
 
-function Card({ god, handleCardClick }) {
+function Card({ god }) {
     const [liked, setLiked] = useState(true);
 
     const fullStar = '★'
@@ -26,7 +26,7 @@ function Card({ god, handleCardClick }) {
                         <hr className="line"></hr>
                         <h2>{god.name}</h2>
                     <button className="circ" onClick={handleClick}>{starred}</button>
-                    <Link to={`/gods/${god.id}`}><button className="expand" id={god.id} onClick={ () => handleCardClick(god) }>+</button></Link>
+                    <Link to={`/gods/${god.id}`}><button className="expand" id={god.id}>+</button></Link>
                 </div>
             </div>
         </div>

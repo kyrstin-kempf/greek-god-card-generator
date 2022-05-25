@@ -9,15 +9,16 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 const App = () => {
   const [gods, setGods] = useState([]);
 
+  useEffect(() => {
+    document.title = "Greek Gods Card Generator";
+  }, []);
+
   const addGod = (god) => {
     setGods([...gods, god])
   }
 
-  const handleCardClick = (god) => {
-    console.log(god)
-    return (
-      <OneGod god={god} />
-    )
+  function deleteGod(id) {
+    setGods(gods.filter(god => god.id !== id));
   }
 
   useEffect(() => {
@@ -28,15 +29,15 @@ const App = () => {
     }
   
     fetchGods();
-  }, []);
+  }, [gods]);
 
   return (
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path="/" element={<AllGods gods={gods} handleCardClick={handleCardClick} />} />
+        <Route path="/" element={<AllGods gods={gods} />} />
         <Route path="/gods/new" element={<NewGod addGod={addGod} />} />
-        <Route path="/gods/:id" element={<OneGod />} />
+        <Route path="/gods/:id" element={<OneGod gods={gods} deleteGod={deleteGod} />} />
       </Routes>
     </BrowserRouter>
   );
