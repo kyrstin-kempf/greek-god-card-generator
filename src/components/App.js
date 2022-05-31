@@ -18,8 +18,27 @@ const App = () => {
   }
 
   function deleteGod(id) {
-    setGods(gods.filter(god => god.id !== id));
+    const dGod = gods.filter(god => god.id.toString() !== id)
+    // console.log(dGod);
+    setGods(dGod);
+    // setGods(gods.filter(god => god.id !== id));
   }
+
+  const sortByAlphabet = () => {
+    setGods([...gods].sort(function(a, b){
+      const nameA = a.name.toUpperCase();
+      const nameB = b.name.toUpperCase();
+      if(nameA < nameB) {
+        return -1;
+      }
+      if(nameA > nameB) {
+        return 1;
+      }
+      return 0
+    }));
+  }
+
+  // console.log(sortByAlphabet())
 
   useEffect(() => {
     const fetchGods = async () => {
@@ -29,13 +48,13 @@ const App = () => {
     }
   
     fetchGods();
-  }, [gods]);
+  }, []);
 
   return (
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path="/" element={<AllGods gods={gods} />} />
+        <Route path="/" element={<AllGods gods={gods} sortByAlphabet={sortByAlphabet} />} />
         <Route path="/gods/new" element={<NewGod addGod={addGod} />} />
         <Route path="/gods/:id" element={<OneGod gods={gods} deleteGod={deleteGod} />} />
       </Routes>
@@ -44,3 +63,5 @@ const App = () => {
 }
 
 export default App;
+
+// sort alphabetical
