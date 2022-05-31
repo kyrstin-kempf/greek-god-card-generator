@@ -9,7 +9,7 @@ const OneGod = ({ gods, deleteGod }) => {
   const deleteCard = '×'
 
   function handleDelete() {
-    console.log('clicked')
+    // console.log('clicked')
 
     fetch(`http://localhost:3001/gods/${id}`, {
       method: "DELETE",
