@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./NavBar";
 import AllGods from "./AllGods";
 import NewGod from "./NewGod";
 import OneGod from './OneGod';
 import '../styles.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
   const [gods, setGods] = useState([]);
