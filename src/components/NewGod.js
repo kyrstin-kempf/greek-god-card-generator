@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import '../styles.css';
 import { useNavigate } from "react-router-dom"
 
 function NewGod({ addGod }) {
@@ -73,4 +72,3 @@ function NewGod({ addGod }) {
   );
 }
 export default NewGod;
-
