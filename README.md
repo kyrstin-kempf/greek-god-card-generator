@@ -1,6 +1,8 @@
 # Greek Gods Card Generator
 The Greek Gods Card Generator is a **single page app (SPA)** that allows a user to view cards of Greek gods, star favorite gods, and create new Greek Gods cards by filling out a form.
 
+![](greekGod.gif)
+
 ## App Details
 * The Greek Gods Card Generator contains six components 
 ```
